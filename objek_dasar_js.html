@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>OBJEK</title>
+    </head>
+    <body>
+
+        <script>
+            var car = 
+            {
+                //properti
+                type : "Fiat",
+                model : "500",
+                weight : "850kg",
+                color : "white",
+
+                //method
+                start: function(){
+                    document.write(" ini method start");
+                },
+                drive: function(){
+                    document.write(" ini method drive");
+                },
+                break: function(){
+                    document.write(" ini method break");
+                },
+                stop: function(){
+                    document.write(" ini method stop");
+                }
+            };
+            document.write(car.type);
+            document.write(car.model);
+            document.write(car.weight);
+            document.write(car.color);
+            car.start();
+            car.drive();
+            car.break();
+            car.stop();
+
+        </script>
+    </body>
+</html>
