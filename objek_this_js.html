@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJEK THIS</title>
+</head>
+<body>
+    <script>
+        function Person(namadepan, namabelakang) {
+            this.namadepan = namadepan;
+            this.namabelakang = namabelakang;
+
+            this.namalengkap = function() {
+                return `${this.namadepan} ${this.namabelakang}`
+            }
+            this.cetaknama = function () {
+                document.write(this.namalengkap());
+            }
+        }
+        let person1 = new Person ("Sandiaga", "Uno");
+        let person2 = new Person ("Joko", "Widodo");
+        let person3 = new Person ("Ma'ruf", "Amin");
+        let person4 = new Person ("Prabowo", "Subianto");
+
+        person1.cetaknama();
+        document.write("<br>");
+        person2.cetaknama();
+        document.write("<br>");
+        person3.cetaknama();
+        document.write("<br>");
+        person4.cetaknama();
+    </script>
+</body>
+</html>
